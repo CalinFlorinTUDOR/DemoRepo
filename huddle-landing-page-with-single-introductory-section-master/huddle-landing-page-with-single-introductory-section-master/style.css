@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --primary-color: hsl(257, 40%, 49%);
+    --secondary-color: hsl(300, 69%, 71%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: rgb(62, 82, 163);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -999999;
+}
+
+.bg img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg img:nth-child(2) {
+    display: none;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 24px 80px;
+}
+
+nav img {
+    width: 15vw;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: 2.1em auto 0;
+    color: white;
+}
+
+header .img img {
+    width: 95%;
+}
+
+header article {
+    width: 88%;
+    margin: 0 auto;
+}
+
+header article h1 {
+    font-weight: 600;
+    font-size: 2.7em;
+    line-height: 1.3em;
+}
+
+header article p {
+    font-weight: 400;
+    opacity: 8;
+    margin-top: -1em;
+    font-size: 1.15em;
+}
+
+header article button {
+    font-weight: 400;
+    border: none;
+    width: 35%;
+    padding: 1em 0;
+    border-radius: 25px;
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    transition: 400ms;
+}
+
+header article button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}

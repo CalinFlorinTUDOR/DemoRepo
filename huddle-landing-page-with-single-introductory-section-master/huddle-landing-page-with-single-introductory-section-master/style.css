@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-:root {
+* {
     --primary-color: hsl(257, 40%, 49%);
     --secondary-color: hsl(300, 69%, 71%);
 }
@@ -101,4 +101,104 @@ header article button:hover {
     background-color: hsl(300, 69%, 71%);
     color: white;
     cursor: pointer;
+}
+
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1em;
+}
+
+footer .center {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+footer .center i {
+    font-weight: 400;
+    font-size: 1.1em;
+    color: white;
+    border: 1px solid white;
+    padding: .5em;
+    border-radius: 50%;
+    width: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+
+footer .center i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .bg img:nth-child(1) {
+        display: none;
+    }
+
+    .bg img:nth-child(2) {
+        display: block;
+    }
+
+    .bg img {
+        width: auto;
+        height: auto;
+    }
+
+    nav {
+        padding: 2em 2em 1em 2em;
+    }
+
+    nav img {
+        width: 35vw;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 80%;
+    }
+
+    header article {
+        text-align: center;
+        width: 95%;
+        margin-top: 5vh;
+    }
+
+    header article h1 {
+        font-size: 1.5em;
+    }
+
+    header article p {
+        margin: 0;
+        font-size: .9em;
+    }
+
+    header article button {
+        width: 65%;
+        padding: .5em 0;
+        margin-top: 1em;
+    }
+
+    footer {
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    footer .center {
+        width: 60%;
+    }
+
+    footer .center i {
+        font-size: 1em;
+    }
 }
